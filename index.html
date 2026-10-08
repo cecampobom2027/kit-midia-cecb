@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Kit de Mídia 2027 | Clube Esportivo Campo Bom - CECB</title>
+<meta name="description" content="Kit de mídia e cotas de patrocínio 2027 do Clube Esportivo Campo Bom. Série Ouro, Copa RS e Estadual Sub-20.">
+<meta property="og:title" content="Kit de Mídia 2027 | CECB">
+<meta property="og:description" content="Sua marca dentro da quadra, nas transmissões, nas redes sociais e junto à comunidade.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a1240">
+
+<style>
+  /* ============================================================
+     CORES DO CLUBE (extraídas do escudo): azul-marinho, vermelho e branco.
+     Se tiver os códigos oficiais, ajuste apenas as variáveis abaixo.
+     ============================================================ */
+  :root {
+    --cor-principal: #0a1240;        /* azul-marinho do escudo */
+    --cor-principal-escura: #060a26; /* fundo escuro */
+    --cor-destaque: #e30613;         /* vermelho do escudo */
+    --cor-destaque-clara: #ff5a64;   /* vermelho legível sobre fundo escuro */
+    --cor-fundo: #f4f6fb;
+    --cor-card: #ffffff;
+    --cor-texto: #1a2033;
+    --cor-texto-suave: #55607a;
+    --cor-borda: #dfe3ee;
+    --raio: 14px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--cor-fundo); color: var(--cor-texto); line-height: 1.6; font-size: 16px;
+  }
+  img { max-width: 100%; height: auto; }
+  a { color: inherit; }
+  .container { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 56px 0; }
+  h1, h2, h3 { line-height: 1.2; }
+  h2 { font-size: 1.9rem; color: var(--cor-principal); margin-bottom: 8px; }
+  .sub { color: var(--cor-texto-suave); margin-bottom: 28px; max-width: 700px; }
+  .selo {
+    display: inline-block; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--cor-destaque); font-weight: 800; margin-bottom: 8px;
+  }
+  .capa .selo, .faixa .selo, .contato .selo { color: var(--cor-destaque-clara); }
+
+  /* ---------- Logo ---------- */
+  .logo { display: inline-block; line-height: 0; }
+  .logo svg, .logo img { width: 100%; height: 100%; display: block; }
+  .logo-topo { width: 40px; height: 40px; }
+  .logo-capa { width: 170px; height: 170px; margin: 0 auto 22px; display: block; filter: drop-shadow(0 6px 18px rgba(0,0,0,.45)); }
+  .logo-rodape { width: 64px; height: 64px; margin-bottom: 10px; }
+
+  /* ---------- Navegação ---------- */
+  .topo {
+    position: -webkit-sticky; position: sticky; top: 0; z-index: 50;
+    background: var(--cor-principal-escura); border-bottom: 3px solid var(--cor-destaque);
+  }
+  .topo .container { display: flex; align-items: center; gap: 14px; }
+  .marca { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; letter-spacing: .08em; text-decoration: none; padding: 8px 0; white-space: nowrap; }
+  .menu { display: flex; overflow-x: auto; -webkit-overflow-scrolling: touch; gap: 4px; flex: 1; scrollbar-width: none; }
+  .menu::-webkit-scrollbar { display: none; }
+  .menu a { color: #d6dcec; text-decoration: none; font-size: .9rem; padding: 14px 10px; white-space: nowrap; }
+  .menu a:hover, .menu a:focus { color: #fff; }
+
+  /* ---------- Capa ---------- */
+  .capa {
+    background: var(--cor-principal);
+    background: linear-gradient(160deg, var(--cor-principal) 0%, var(--cor-principal-escura) 100%);
+    color: #fff; text-align: center; padding: 64px 0 76px; border-bottom: 6px solid var(--cor-destaque);
+  }
+  .capa h1 { font-size: 2.6rem; margin-bottom: 10px; }
+  .capa h1 span { color: var(--cor-destaque-clara); }
+  .capa p.lead { font-size: 1.15rem; max-width: 680px; margin: 0 auto 8px; color: #e6ebf6; }
+  .capa p.local { color: #b9c3dc; font-size: .95rem; margin-bottom: 28px; }
+  .botoes { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn {
+    display: inline-block; padding: 13px 24px; border-radius: 999px; font-weight: 700; font-size: .98rem;
+    text-decoration: none; border: 2px solid var(--cor-destaque); cursor: pointer; font-family: inherit;
+    -webkit-appearance: none; appearance: none;
+  }
+  .btn-cheio { background: var(--cor-destaque); color: #fff; }
+  .btn-vazado { background: transparent; color: #fff; border-color: #fff; }
+  .btn-cheio:hover { background: #c20510; border-color: #c20510; }
+  .btn-vazado:hover { background: rgba(255,255,255,.12); }
+
+  /* ---------- Grades ---------- */
+  .grade { display: flex; flex-wrap: wrap; margin: 0 -8px; }
+  .grade > * { margin: 8px; }
+  .g3 > * { flex: 1 1 280px; }
+  .g4 > * { flex: 1 1 200px; }
+  .g2 > * { flex: 1 1 420px; }
+
+  .card {
+    background: var(--cor-card); border: 1px solid var(--cor-borda); border-radius: var(--raio);
+    padding: 24px; box-shadow: 0 2px 8px rgba(10,18,64,.06);
+  }
+  .card h3 { color: var(--cor-principal); margin-bottom: 8px; font-size: 1.15rem; }
+  .card p { color: var(--cor-texto-suave); font-size: .96rem; }
+
+  /* ---------- Números ---------- */
+  .numero { text-align: center; }
+  .numero strong { display: block; font-size: 2.3rem; color: var(--cor-destaque); line-height: 1.1; }
+  .numero span { font-size: .92rem; color: var(--cor-texto-suave); }
+
+  .faixa { background: var(--cor-principal); color: #fff; }
+  .faixa h2 { color: #fff; }
+  .faixa .sub { color: #c9d2e8; }
+  .faixa .card { background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.16); box-shadow: none; }
+  .faixa .card h3 { color: #fff; }
+  .faixa .card p, .faixa .numero span { color: #dbe2f2; }
+  .faixa .numero strong { color: var(--cor-destaque-clara); }
+  .faixa .card.cota { background: #fff; border-color: var(--cor-borda); box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+  .faixa .card.cota.destaque { border: 2px solid var(--cor-destaque); }
+
+  .aviso {
+    margin-top: 18px; padding: 12px 16px; border-left: 4px solid var(--cor-destaque);
+    background: #fdecee; color: #5a1a20; font-size: .88rem; border-radius: 6px;
+  }
+  .faixa .aviso { background: rgba(255,255,255,.1); color: #f1d9dc; }
+
+  /* ---------- Cotas ---------- */
+  .cota { display: flex; flex-direction: column; position: relative; }
+  .tag {
+    position: absolute; top: -12px; right: 18px; background: var(--cor-destaque); color: #fff;
+    font-size: .72rem; font-weight: 800; padding: 4px 12px; border-radius: 999px; text-transform: uppercase; letter-spacing: .06em;
+  }
+  .cota .nome { font-size: 1.3rem; font-weight: 800; color: var(--cor-principal); }
+  .cota .preco { font-size: 2rem; font-weight: 800; color: var(--cor-destaque); line-height: 1.2; margin-top: 6px; }
+  .cota .parcela { color: var(--cor-texto); font-size: .92rem; font-weight: 600; margin-bottom: 4px; }
+  .cota .disp { font-size: .82rem; color: var(--cor-texto-suave); margin-bottom: 14px; }
+  .cota ul { list-style: none; margin: 0 0 14px; }
+  .cota li { padding: 6px 0 6px 22px; position: relative; font-size: .94rem; color: var(--cor-texto); border-bottom: 1px solid var(--cor-borda); }
+  .cota li:last-child { border-bottom: 0; }
+  .cota li::before { content: ""; position: absolute; left: 2px; top: 14px; width: 9px; height: 9px; background: var(--cor-destaque); border-radius: 50%; }
+  details { margin-top: auto; }
+  summary { cursor: pointer; font-weight: 700; color: var(--cor-principal); font-size: .92rem; padding: 10px 0; list-style: none; outline: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "+ "; color: var(--cor-destaque); font-weight: 900; }
+  details[open] summary::before { content: "\2212  "; }
+  details ul { margin-top: 6px; }
+  .cota .btn { margin-top: 14px; text-align: center; background: var(--cor-principal); color: #fff; border-color: var(--cor-principal); }
+  .cota .btn:hover { background: var(--cor-destaque); border-color: var(--cor-destaque); }
+
+  /* ---------- Tabela ---------- */
+  .tabela-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--cor-borda); border-radius: var(--raio); background: #fff; }
+  table { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .92rem; }
+  th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--cor-borda); }
+  th { background: var(--cor-principal); color: #fff; font-weight: 700; white-space: nowrap; border-bottom: 3px solid var(--cor-destaque); }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 700; color: var(--cor-principal); }
+
+  /* ---------- Listas simples ---------- */
+  ul.simples { list-style: none; }
+  ul.simples li { padding: 8px 0 8px 24px; position: relative; border-bottom: 1px solid var(--cor-borda); }
+  ul.simples li:last-child { border-bottom: 0; }
+  ul.simples li::before { content: ""; position: absolute; left: 2px; top: 17px; width: 9px; height: 9px; background: var(--cor-destaque); border-radius: 50%; }
+  .faixa ul.simples li { border-color: rgba(255,255,255,.16); color: #e6ebf6; }
+
+  /* ---------- Propriedades ---------- */
+  .prop .preco { color: var(--cor-destaque); font-weight: 800; font-size: 1.4rem; }
+  .prop .pag { font-size: .88rem; color: var(--cor-texto-suave); margin-bottom: 8px; }
+
+  /* ---------- Contato ---------- */
+  .contato { background: var(--cor-principal-escura); color: #fff; text-align: center; border-top: 6px solid var(--cor-destaque); }
+  .contato h2 { color: #fff; font-size: 2.1rem; }
+  .contato p { color: #c9d2e8; max-width: 640px; margin: 0 auto 26px; }
+  .contato .dados { margin-top: 26px; color: #e6ebf6; font-size: .98rem; line-height: 2; }
+  .contato .dados a { text-decoration: none; border-bottom: 1px dotted var(--cor-destaque-clara); }
+
+  footer { background: #03061a; color: #8f9abb; text-align: center; padding: 26px 20px; font-size: .82rem; }
+  footer .logo { margin: 0 auto; }
+
+  /* ---------- Responsivo ---------- */
+  @media (max-width: 640px) {
+    section { padding: 40px 0; }
+    .capa { padding: 44px 0 52px; }
+    .logo-capa { width: 140px; height: 140px; }
+    .capa h1 { font-size: 1.9rem; }
+    h2 { font-size: 1.5rem; }
+    .cota .preco { font-size: 1.7rem; }
+    .botoes .btn { width: 100%; text-align: center; }
+    .botoes { flex-direction: column; }
+  }
+
+  /* ---------- Impressão / PDF ---------- */
+  @media print {
+    .topo, .botoes, .cota .btn { display: none !important; }
+    body { background: #fff; }
+    section { padding: 24px 0; page-break-inside: avoid; }
+    .capa, .faixa, .contato, th, .tag { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ============ ESCUDO (desenho vetorial reutilizável) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="escudo-cecb" viewBox="0 0 200 200">
+      <defs>
+        <path id="arco-topo" d="M 34,100 A 66,66 0 0 1 166,100"/>
+        <path id="arco-base" d="M 20,100 A 80,80 0 0 0 180,100"/>
+      </defs>
+      <!-- anéis -->
+      <circle cx="100" cy="100" r="97" fill="#ffffff"/>
+      <circle cx="100" cy="100" r="93" fill="#0a1240"/>
+      <circle cx="100" cy="100" r="90" fill="none" stroke="#e30613" stroke-width="2.5"/>
+      <!-- textos curvos -->
+      <text font-family="'Arial Black','Arial Rounded MT Bold',Arial,sans-serif" font-weight="900" font-size="15.5" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+        <textPath href="#arco-topo" xlink:href="#arco-topo" startOffset="50%">CLUBE ESPORTIVO</textPath>
+      </text>
+      <text font-family="'Arial Black','Arial Rounded MT Bold',Arial,sans-serif" font-weight="900" font-size="18" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+        <textPath href="#arco-base" xlink:href="#arco-base" startOffset="50%">CAMPO BOM</textPath>
+      </text>
+      <!-- círculo central -->
+      <circle cx="100" cy="100" r="58" fill="#0a1240" stroke="#e30613" stroke-width="3"/>
+      <circle cx="100" cy="100" r="52" fill="#0a1240" stroke="#ffffff" stroke-width="2.5"/>
+      <!-- bola -->
+      <circle cx="100" cy="100" r="34" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+      <polygon points="100,84 115.2,95 109.4,112.9 90.6,112.9 84.8,95" fill="#0a1240" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round"/>
+      <g stroke="#ffffff" stroke-width="2.2" stroke-linecap="round">
+        <line x1="100" y1="84" x2="100" y2="50"/>
+        <line x1="115.2" y1="95" x2="147.5" y2="84.5"/>
+        <line x1="109.4" y1="112.9" x2="129.4" y2="140.4"/>
+        <line x1="90.6" y1="112.9" x2="70.6" y2="140.4"/>
+        <line x1="84.8" y1="95" x2="52.5" y2="84.5"/>
+      </g>
+      <!-- faixas laterais 20 | 22 -->
+      <polygon points="8,86 14,80 48,80 48,120 14,120 8,114" fill="#ffffff"/>
+      <polygon points="12,87 16,84 46,84 46,116 16,116 12,113" fill="#e30613"/>
+      <polygon points="192,86 186,80 152,80 152,120 186,120 192,114" fill="#ffffff"/>
+      <polygon points="188,87 184,84 154,84 154,116 184,116 188,113" fill="#e30613"/>
+      <text x="29" y="106" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="15" fill="#ffffff" text-anchor="middle">20</text>
+      <text x="171" y="106" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="15" fill="#ffffff" text-anchor="middle">22</text>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="topo">
+  <div class="container">
+    <a class="marca" href="#inicio" aria-label="Clube Esportivo Campo Bom - início">
+      <span class="logo logo-topo"><svg viewBox="0 0 200 200" role="img" aria-label="Escudo do CECB"><use href="#escudo-cecb" xlink:href="#escudo-cecb"/></svg></span>
+      <span>CECB</span>
+    </a>
+    <nav class="menu" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#serie-ouro">Série Ouro</a>
+      <a href="#alcance">Alcance</a>
+      <a href="#cotas">Cotas</a>
+      <a href="#comparativo">Comparativo</a>
+      <a href="#propriedades">Outras propriedades</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#transparencia">Transparência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================= CAPA ======================= -->
+<section class="capa" id="inicio">
+  <div class="container">
+    <span class="logo logo-capa"><svg viewBox="0 0 200 200" role="img" aria-label="Escudo do Clube Esportivo Campo Bom, 2022"><use href="#escudo-cecb" xlink:href="#escudo-cecb"/></svg></span>
+    <span class="selo">Kit de mídia digital | Temporada 2027</span>
+    <h1>Clube Esportivo <span>Campo Bom</span></h1>
+    <p class="lead">Sua marca dentro da quadra, nas transmissões, nas redes sociais e na conexão com a comunidade.</p>
+    <p class="local">Série Ouro | Copa RS | Campeonato Estadual Sub-20 &nbsp;•&nbsp; Campo Bom, Vale dos Sinos, RS</p>
+    <div class="botoes">
+      <a class="btn btn-cheio" href="#cotas">Ver cotas de patrocínio</a>
+      <a class="btn btn-vazado" href="https://wa.me/5551989155775?text=Ol%C3%A1!%20Vi%20o%20kit%20de%20m%C3%ADdia%20do%20CECB%202027%20e%20gostaria%20de%20conversar%20sobre%20patroc%C3%ADnio." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <button class="btn btn-vazado" type="button" id="btn-compartilhar">Compartilhar este kit</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SOBRE ======================= -->
+<section id="sobre">
+  <div class="container">
+    <span class="selo">Quem somos</span>
+    <h2>Esporte, comunidade e visibilidade</h2>
+    <p class="sub">Patrocinar o CECB é associar sua empresa à energia do esporte, à disciplina, ao desempenho e ao desenvolvimento da nossa região.</p>
+    <div class="grade g3">
+      <div class="card">
+        <h3>O clube</h3>
+        <p>Associação sem fins lucrativos, fundada em 2022 e filiada à Federação Gaúcha de Futsal (FGFS), atuando no Vale dos Sinos e na Região Metropolitana.</p>
+      </div>
+      <div class="card">
+        <h3>Competições 2027</h3>
+        <p>Série Ouro com a equipe adulta, Campeonato Estadual Sub-20 com a base e Copa RS, entre as principais competições do futsal gaúcho.</p>
+      </div>
+      <div class="card">
+        <h3>Campo Bom TV</h3>
+        <p>Transmissões, entrevistas e conteúdos audiovisuais, além de ações de relacionamento com a comunidade e com torcedores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SÉRIE OURO ======================= -->
+<section class="faixa" id="serie-ouro">
+  <div class="container">
+    <span class="selo">Uma competição que vai além da quadra</span>
+    <h2>Série Ouro FGFS: a elite do futsal gaúcho</h2>
+    <p class="sub">Reúne projetos esportivos de diferentes regiões do Estado, movimentando atletas, comissões técnicas, dirigentes, arbitragem, imprensa, fornecedores e torcedores ao longo de uma temporada de aproximadamente dez meses.</p>
+    <div class="grade g3">
+      <div class="card numero"><strong>24</strong><span>clubes envolvidos</span></div>
+      <div class="card numero"><strong>529</strong><span>atletas registrados oficialmente</span></div>
+      <div class="card numero"><strong>10 meses</strong><span>de competição, de março a dezembro</span></div>
+      <div class="card numero"><strong>+20</strong><span>jogos potenciais, entre fase classificatória e playoffs</span></div>
+      <div class="card numero"><strong>+1.200</strong><span>pessoas diretamente envolvidas</span></div>
+      <div class="card numero"><strong>Milhares</strong><span>de pessoas impactadas entre torcedores, familiares e comunidades</span></div>
+    </div>
+    <ul class="simples" style="margin-top:22px;">
+      <li>Única competição autorizada no estado pela CBFS.</li>
+      <li>O campeão garante vaga no Campeonato Brasileiro.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================= ALCANCE ======================= -->
+<section id="alcance">
+  <div class="container">
+    <span class="selo">Alcance e oportunidade de marca</span>
+    <h2>Onde sua marca aparece</h2>
+    <p class="sub">Uma vitrine para empresas do Vale dos Sinos, da Região Metropolitana, do Estado e de todo o Brasil.</p>
+
+    <div class="grade g3">
+      <div class="card numero"><strong>+8 milhões</strong><span>de visualizações anuais no Instagram (Feed, Stories e Reels)</span></div>
+      <div class="card numero"><strong>+10 mil</strong><span>de visualizações por jogo no canal do YouTube</span></div>
+      <div class="card numero"><strong>+800 mil</strong><span>de visualizações por mês, somando Instagram e YouTube</span></div>
+    </div>
+
+    <div class="grade g2" style="margin-top:12px;">
+      <div class="card">
+        <h3>Canais de entrega</h3>
+        <ul class="simples">
+          <li><strong>Ginásio e jogos oficiais:</strong> uniformes, banners, entrevistas e ativações.</li>
+          <li><strong>Redes sociais:</strong> artes de jogos, resultados, bastidores e conteúdos institucionais.</li>
+          <li><strong>Campo Bom TV:</strong> transmissões, entrevistas e conteúdos audiovisuais.</li>
+          <li><strong>Relacionamento e comunidade:</strong> ações com clientes, colaboradores e torcedores.</li>
+          <li><strong>Acompanhamento:</strong> relatórios com ações e indicadores digitais.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Presença constante</h3>
+        <ul class="simples">
+          <li>Jogos em casa e fora, com fotos e vídeos oficiais.</li>
+          <li>Conteúdos pré e pós-jogo, escalação, resultados, bastidores e transmissões.</li>
+          <li>Eventos, ações sociais e relacionamento comunitário.</li>
+          <li>Presença nos jornais e rádios da região.</li>
+          <li>Competição com alguns dos maiores clubes de futsal do Brasil, em um esporte praticado no mundo todo, em competições oficiais, amadoras e escolas.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="aviso">Métricas informadas pelo clube. Os relatórios das plataformas, com período de apuração, podem ser solicitados ao contato comercial.</p>
+  </div>
+</section>
+
+<!-- ======================= COTAS ======================= -->
+<section class="faixa" id="cotas">
+  <div class="container">
+    <span class="selo">Cotas de patrocínio 2027</span>
+    <h2>Escolha o nível de exposição ideal</h2>
+    <p class="sub">Cada cota oferece benefícios exclusivos, com presença no uniforme, redes sociais, transmissões e eventos do CECB.</p>
+
+    <div class="grade g3">
+
+      <article class="card cota destaque">
+        <span class="tag">Cota única</span>
+        <div class="nome">Naming Rights</div>
+        <div class="preco">R$ 40.000</div>
+        <div class="parcela">Em até 10x de R$ 4.000</div>
+        <div class="disp">Apenas uma cota disponível</div>
+        <ul>
+          <li>Nome da empresa integrado à identificação oficial do clube</li>
+          <li>Maior espaço comercial no uniforme, com prioridade na frente</li>
+          <li>20 ingressos por jogo em casa</li>
+          <li>5 camisas oficiais por temporada</li>
+        </ul>
+        <details>
+          <summary>Ver todos os benefícios</summary>
+          <ul>
+            <li>Presença nas artes semanais do clube nas redes sociais</li>
+            <li>Destaque como patrocinador principal em materiais institucionais</li>
+            <li>Presença prioritária em fotos, vídeos e transmissões</li>
+            <li>Banner ou backdrop de entrevistas e inserções recorrentes nas redes sociais</li>
+            <li>Relatório periódico de entregas</li>
+            <li>Presença em jornais e programas esportivos da região, junto ao clube</li>
+            <li>Espaços exclusivos nos jogos e eventos para exposição e divulgação</li>
+            <li>Presença em materiais do clube: agasalhos, kit viagem, camisas de jogo e de aquecimento, coletes</li>
+            <li>Espaço central na quadra, em jogos em casa, para faixas</li>
+            <li>Participação nas transmissões como comentarista, mediante definição prévia</li>
+          </ul>
+        </details>
+        <a class="btn" href="https://wa.me/5551989155775?text=Ol%C3%A1!%20Tenho%20interesse%20na%20cota%20Naming%20Rights%20do%20CECB%202027." target="_blank" rel="noopener">Tenho interesse</a>
+      </article>
+
+      <article class="card cota">
+        <div class="nome">Diamante</div>
+        <div class="preco">R$ 20.000</div>
+        <div class="parcela">Em até 10x de R$ 2.000</div>
+        <div class="disp">Cotas limitadas</div>
+        <ul>
+          <li>Logotipo em destaque na frente do uniforme adulto</li>
+          <li>10 ingressos por jogo em casa</li>
+          <li>2 camisas oficiais por temporada</li>
+          <li>1 publicação exclusiva por semana</li>
+        </ul>
+        <details>
+          <summary>Ver todos os benefícios</summary>
+          <ul>
+            <li>Logotipo também nos coletes e camisas de treino</li>
+            <li>Exposição em jogos oficiais, amistosos e ações institucionais</li>
+            <li>Prioridade de citação entre patrocinadores</li>
+            <li>Espaço lateral da quadra (atrás dos gols) para faixa</li>
+            <li>Banner de entrevistas e conteúdos de bastidores</li>
+            <li>Possibilidade de participação em eventos e conteúdos do clube</li>
+            <li>Vídeo institucional nas transmissões, quando aplicável</li>
+            <li>Ações promocionais em jogos</li>
+            <li>Relatório de contrapartidas</li>
+          </ul>
+        </details>
+        <a class="btn" href="https://wa.me/5551989155775?text=Ol%C3%A1!%20Tenho%20interesse%20na%20cota%20Diamante%20do%20CECB%202027." target="_blank" rel="noopener">Tenho interesse</a>
+      </article>
+
+      <article class="card cota">
+        <div class="nome">Ouro</div>
+        <div class="preco">R$ 10.000</div>
+        <div class="parcela">Em até 10x de R$ 1.000</div>
+        <div class="disp">Cotas limitadas</div>
+        <ul>
+          <li>Logotipo em destaque nas costas do uniforme e nos coletes</li>
+          <li>5 ingressos por jogo em casa</li>
+          <li>50% de desconto em ingressos e 20% em produtos oficiais</li>
+        </ul>
+        <details>
+          <summary>Ver todos os benefícios</summary>
+          <ul>
+            <li>Alta visibilidade durante partidas e transmissões</li>
+            <li>Exposição em jogos, fotos, vídeos e transmissões</li>
+            <li>Presença em conteúdos institucionais e de patrocinadores</li>
+            <li>Banner de entrevistas e publicações semanais</li>
+            <li>Ativações comerciais em jogos</li>
+            <li>Presença em eventos anuais do clube</li>
+          </ul>
+        </details>
+        <a class="btn" href="https://wa.me/5551989155775?text=Ol%C3%A1!%20Tenho%20interesse%20na%20cota%20Ouro%20do%20CECB%202027." target="_blank" rel="noopener">Tenho interesse</a>
+      </article>
+
+      <article class="card cota">
+        <div class="nome">Prata</div>
+        <div class="preco">R$ 6.000</div>
+        <div class="parcela">Em até 6x de R$ 1.000</div>
+        <div class="disp">Cotas limitadas</div>
+        <ul>
+          <li>Logotipo em espaço secundário no uniforme e nos uniformes de aquecimento</li>
+          <li>1 publicação institucional por mês</li>
+          <li>50% de desconto em ingressos e 20% em produtos oficiais</li>
+        </ul>
+        <details>
+          <summary>Ver todos os benefícios</summary>
+          <ul>
+            <li>Presença em jogos, fotos e vídeos institucionais</li>
+            <li>Divulgação em redes sociais e conteúdos selecionados</li>
+            <li>Banner de patrocinadores e possível banner de entrevistas</li>
+            <li>Menções em conteúdos relacionados</li>
+            <li>Relatório simplificado</li>
+          </ul>
+        </details>
+        <a class="btn" href="https://wa.me/5551989155775?text=Ol%C3%A1!%20Tenho%20interesse%20na%20cota%20Prata%20do%20CECB%202027." target="_blank" rel="noopener">Tenho interesse</a>
+      </article>
+
+      <article class="card cota">
+        <div class="nome">Bronze</div>
+        <div class="preco">R$ 3.000</div>
+        <div class="parcela">Em até 2x de R$ 1.500</div>
+        <div class="disp">Cotas limitadas</div>
+        <ul>
+          <li>Logotipo em calção de jogo, material de apoio ou local definido</li>
+          <li>Inclusão na relação de patrocinadores oficiais</li>
+          <li>Prioridade na compra de ingressos</li>
+        </ul>
+        <details>
+          <summary>Ver todos os benefícios</summary>
+          <ul>
+            <li>Divulgação em publicações institucionais e menção em jogos</li>
+            <li>Participação em ações e campanhas selecionadas</li>
+            <li>Possibilidade de banner coletivo</li>
+            <li>Registro das ações entregues</li>
+            <li>Divulgação nas redes sociais do clube, nos jogos, por meio dos uniformes</li>
+            <li>Presença institucional com visibilidade contínua</li>
+          </ul>
+        </details>
+        <a class="btn" href="https://wa.me/5551989155775?text=Ol%C3%A1!%20Tenho%20interesse%20na%20cota%20Bronze%20do%20CECB%202027." target="_blank" rel="noopener">Tenho interesse</a>
+      </article>
+
+    </div>
+    <p class="aviso">Exclusividade por segmento mediante negociação, contrato e disponibilidade. Valores sujeitos a condições comerciais.</p>
+  </div>
+</section>
+
+<!-- ======================= COMPARATIVO ======================= -->
+<section id="comparativo">
+  <div class="container">
+    <span class="selo">Compare as cotas</span>
+    <h2>Quadro comparativo</h2>
+    <p class="sub">Deslize a tabela para o lado em telas pequenas.</p>
+    <div class="tabela-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Cota</th>
+            <th>Valor</th>
+            <th>Parcelamento</th>
+            <th>Posição da marca</th>
+            <th>Ingressos por jogo em casa</th>
+            <th>Camisas oficiais</th>
+            <th>Publicações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Naming Rights</td><td>R$ 40.000</td><td>10x de R$ 4.000</td><td>Nome do clube e prioridade na frente</td><td>20</td><td>5</td><td>Presença nas artes semanais</td></tr>
+          <tr><td>Diamante</td><td>R$ 20.000</td><td>10x de R$ 2.000</td><td>Frente do uniforme adulto</td><td>10</td><td>2</td><td>1 exclusiva por semana</td></tr>
+          <tr><td>Ouro</td><td>R$ 10.000</td><td>10x de R$ 1.000</td><td>Costas do uniforme e coletes</td><td>5</td><td>-</td><td>Publicações semanais</td></tr>
+          <tr><td>Prata</td><td>R$ 6.000</td><td>6x de R$ 1.000</td><td>Espaço secundário no uniforme</td><td>-</td><td>-</td><td>1 institucional por mês</td></tr>
+          <tr><td>Bronze</td><td>R$ 3.000</td><td>2x de R$ 1.500</td><td>Calção ou local definido</td><td>Prioridade de compra</td><td>-</td><td>Publicações institucionais</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= OUTRAS PROPRIEDADES ======================= -->
+<section id="propriedades" style="padding-top:0;">
+  <div class="container">
+    <span class="selo">Outras propriedades comerciais</span>
+    <h2>Sua marca também pode aparecer fora do uniforme</h2>
+    <p class="sub">Escolha a propriedade que melhor se encaixa na sua estratégia de visibilidade.</p>
+    <div class="grade g3">
+      <div class="card prop">
+        <h3>Campo Bom TV</h3>
+        <div class="preco">R$ 5.000 / ano</div>
+        <div class="pag">Em até 5x</div>
+        <p>Marca no uniforme da equipe de transmissão dos jogos em casa, em eventos e em conteúdos ao vivo.</p>
+      </div>
+      <div class="card prop">
+        <h3>Banner de patrocinadores</h3>
+        <div class="preco">R$ 1.000 / ano</div>
+        <div class="pag">Parcela única</div>
+        <p>Exposição no ginásio durante jogos em casa e eventos oficiais.</p>
+      </div>
+      <div class="card prop">
+        <h3>Banner de entrevistas</h3>
+        <div class="preco">R$ 1.500 / ano</div>
+        <div class="pag">À vista</div>
+        <p>Marca no backdrop de entrevistas e transmissões.</p>
+      </div>
+    </div>
+    <p class="aviso">Kit de treino, coletes e ações em dia de jogo disponíveis sob consulta. Todas as ações respeitam as regras do ginásio, regulamentos e autorizações vigentes.</p>
+  </div>
+</section>
+
+<!-- ======================= EVENTOS ======================= -->
+<section class="faixa" id="eventos">
+  <div class="container">
+    <span class="selo">Relacionamento com a comunidade</span>
+    <h2>Calendário de eventos do CECB</h2>
+    <p class="sub">Os patrocinadores serão convidados especiais das ações do clube.</p>
+    <div class="grade g4">
+      <div class="card"><h3>Apresentação</h3><p>Elenco e patrocinadores.</p></div>
+      <div class="card"><h3>Baile de Casal</h3><p>Evento de relacionamento e confraternização.</p></div>
+      <div class="card"><h3>Festa da Família</h3><p>Integração entre atletas, torcedores e famílias.</p></div>
+      <div class="card"><h3>Projeto Social</h3><p>Ação com as crianças da comunidade.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TRANSPARÊNCIA ======================= -->
+<section id="transparencia">
+  <div class="container">
+    <span class="selo">Transparência e entrega</span>
+    <h2>Patrocínio com organização e compromisso real</h2>
+    <p class="sub">Acompanhamento próximo de cada parceiro, da assinatura ao relatório final.</p>
+    <div class="grade g4">
+      <div class="card"><h3>Formalização</h3><p>Contrato ou termo formal, com definição clara da propriedade adquirida e do calendário de ativações.</p></div>
+      <div class="card"><h3>Registro e relatório</h3><p>Registro fotográfico e digital das entregas e relatório periódico com publicações, links, fotos e métricas.</p></div>
+      <div class="card"><h3>Canal direto</h3><p>Contato direto com o responsável comercial, com possibilidade de renovação e ampliação da parceria.</p></div>
+      <div class="card"><h3>Redes sociais</h3><p>Divulgação no Instagram e no canal do YouTube, com média superior a 800 mil visualizações por mês.</p></div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h3>Regras importantes</h3>
+      <ul class="simples">
+        <li>Cotas limitadas e conforme disponibilidade.</li>
+        <li>Exclusividade por segmento mediante contrato.</li>
+        <li>Aplicação das marcas conforme prazo de produção.</li>
+        <li>Respeito às regras da FGFS e das competições.</li>
+        <li>Envio da marca em arquivo vetorial de boa qualidade.</li>
+        <li>Contrapartidas registradas e acompanhadas.</li>
+        <li>Emissão de notas conforme necessidade.</li>
+        <li>Possibilidade de alterações por mudanças no calendário, no ginásio ou nas transmissões, sempre formalizadas em contrato ou termo de patrocínio.</li>
+        <li>O clube não garante audiência ou retorno direto.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTATO ======================= -->
+<section class="contato" id="contato">
+  <div class="container">
+    <span class="selo">Fale conosco</span>
+    <h2>Sua empresa vale ouro</h2>
+    <p>O esporte aproxima pessoas, movimenta a região, cria oportunidades e fortalece marcas que escolhem estar próximas da comunidade. Seja patrocinador do Clube Esportivo Campo Bom em 2027.</p>
+    <div class="botoes">
+      <a class="btn btn-cheio" href="https://wa.me/5551989155775?text=Ol%C3%A1!%20Vi%20o%20kit%20de%20m%C3%ADdia%20do%20CECB%202027%20e%20gostaria%20de%20conversar%20sobre%20patroc%C3%ADnio." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn btn-vazado" href="mailto:cecampobom@gmail.com?subject=Patroc%C3%ADnio%20CECB%202027">Enviar e-mail</a>
+      <a class="btn btn-vazado" href="https://www.instagram.com/cecampobom" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div class="dados">
+      Telefone: <a href="tel:+5551989155775">(51) 98915-5775</a><br>
+      E-mail: <a href="mailto:cecampobom@gmail.com">cecampobom@gmail.com</a><br>
+      Instagram: <a href="https://www.instagram.com/cecampobom" target="_blank" rel="noopener">@cecampobom</a><br>
+      Campo Bom, Vale dos Sinos, Rio Grande do Sul
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span class="logo logo-rodape"><svg viewBox="0 0 200 200" role="img" aria-label="Escudo do CECB"><use href="#escudo-cecb" xlink:href="#escudo-cecb"/></svg></span>
+  <p>&copy; 2027 Clube Esportivo Campo Bom - CECB. Valores e condições sujeitos a formalização contratual e disponibilidade.</p>
+  <p style="margin-top:8px;"><button type="button" onclick="window.print()" style="background:none;border:0;color:#8f9abb;text-decoration:underline;cursor:pointer;font-size:.82rem;font-family:inherit;">Imprimir ou salvar em PDF</button></p>
+</footer>
+
+<script>
+  // 1) Se existir o arquivo "logo-cecb.png" na mesma pasta, ele substitui
+  //    automaticamente o escudo vetorial em todos os pontos da página.
+  (function () {
+    var teste = new Image();
+    teste.onload = function () {
+      var caixas = document.querySelectorAll('.logo');
+      for (var i = 0; i < caixas.length; i++) {
+        caixas[i].innerHTML = '<img src="logo-cecb.png" alt="Escudo do Clube Esportivo Campo Bom">';
+      }
+    };
+    teste.src = 'logo-cecb.png';
+  })();
+
+  // 2) Botão de compartilhar: menu nativo do celular ou cópia do link.
+  (function () {
+    var btn = document.getElementById('btn-compartilhar');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var dados = {
+        title: 'Kit de Mídia 2027 | CECB',
+        text: 'Conheça as cotas de patrocínio do Clube Esportivo Campo Bom em 2027.',
+        url: window.location.href
+      };
+      if (navigator.share) {
+        navigator.share(dados).catch(function () {});
+      } else if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(dados.url).then(function () {
+          btn.textContent = 'Link copiado';
+          setTimeout(function () { btn.textContent = 'Compartilhar este kit'; }, 2500);
+        });
+      } else {
+        window.prompt('Copie o link:', dados.url);
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
